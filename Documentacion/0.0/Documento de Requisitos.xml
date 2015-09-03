@@ -1,0 +1,2904 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files (x86)\REM 1.2.2\xml\REM_1_2_2.dtd">
+<rem:requirementsProject
+xmlns:rem="http://rem.lsi.us.es">
+<rem:name>Documento de Requisitos</rem:name>
+<rem:c_requirementsSpecification oid = "CRS-0001">
+<rem:name>Documento de Requisitos de un Sistema de Consulta de Libros (SCL)</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+	 <rem:preparedFor organizations = "ORG-0001 "/>
+	 <rem:preparedBy organizations = "ORG-0002 "/>
+<rem:section
+ oid = "SEC-0001">
+<rem:name>
+INTRODUCCIÓN</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0001">
+<rem:name>
+Introduccion</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>El presente documento de requisitos de software (SRS) del sistema surge de un estudio y analisis previo hacia el organismo a  el cual se piensa hacer el producto, se espera que el proceso de elaboracion se hara para que el cliente se sienta satisfecho.</rem:text>
+</rem:paragraph>
+<rem:section
+ oid = "SEC-0002">
+<rem:name>
+Proposito</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0002">
+<rem:name>
+Proposito</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>- Documentar y estructurar las peticiones acordadas del cliente.<br/>- Mostrar de una manera facil y entendible a los usuarios finales que es lo que el cliente desea.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0003">
+<rem:name>
+Alcance</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0003">
+<rem:name>
+Alcance</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>- Identificacion del producto de software &quot;SCL&quot;<br/>- Objeitvos del sistema: <br/>  -  Permitir la gestion la consulta de libros.<br/>  -  Mostrar el Lugar donde se encuentran los libros.<br/>  -  Mostrar la informacion importante de los libros.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0004">
+<rem:name>
+Personal Involucrado</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.3 </rem:number>
+<rem:stakeholder
+ oid = "STK-0001">
+<rem:name>
+Diego Hernan Aguilar Gomez</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Gestor de Proyecto, Programador, Diseñador de base de datos, Analista</rem:stakeholderRole>
+<rem:isDeveloper/>
+<rem:worksFor organization = "ORG-0002"/>
+</rem:stakeholder>
+</rem:section>
+<rem:section
+ oid = "SEC-0005">
+<rem:name>
+Definiciones y acronimos </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.4 </rem:number>
+<rem:section
+ oid = "SEC-0016">
+<rem:name>
+Definiciones</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>1.4.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0035">
+<rem:name>
+Definiciones</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>-ACTUALIZACION.- Insertar, eliminar,  modificar los registros  de los usuarios (Profesores). <br/>-ALMACENAMIENTO- En relación con ordenadores o computadoras, cualquier dispositivo capaz de almacenar información procedente de un sistema informático.  <br/>-ANDROID.- Es un sistema operativo basado en el núcleo Linux. Fue diseñado principalmente para dispositivos móviles con pantalla táctil, como teléfonos inteligentes o tablets; y también para relojes inteligentes, televisores y automóviles.<br/>-BASE DE DATOS.- Cualquier conjunto de datos organizados para su almacenamiento en la memoria de un ordenador o computadora, diseñado para facilitar su mantenimiento y <br/>acceso de una forma estándar. La información se organiza en campos y registros. Uncampo se refiere a un tipo o atributo de información, y un registro, a toda la información sobre un individuo.  <br/>-CONEXION.- Comunicación entre dos entes que tienen características similares de comunicación. <br/>Interfaz.- Medio que permite la comunicación entre el usuario y el sistema. <br/>-DISPOSITIVOS MOVILES.- Se puede definir como un aparato de pequeño tamaño, con  algunas capacidades de procesamiento, con conexión permanente o intermitente a una red, con memoria limitada, que ha sido diseñado específicamente para una función, pero que puede llevar a cabo otras funciones más generales.<br/>-HOST/HOSTING- Es un ordenador que funciona como el punto de inicio y final de las transferencias de datos. Más comúnmente descrito como el lugar donde reside un sitio web. Un host de Internet tiene una dirección de Internet única (dirección IP) y un nombre de dominio único o nombre de host.<br/>-INTERNET- interconexión de redes informáticas que permite a los ordenadores o computadoras conectadas comunicarse directamente, es decir, cada ordenador de la red puede conectarse a cualquier otro ordenador de la red.  El término suele referirse a una interconexión en particular, de carácter planetario y abierto al público, que conecta <br/>redes informáticas de organismos oficiales, educativos y empresariales. <br/>-LOGIN.- Nombre o alias que se le da a una persona para permitirle el acceso al sistema siempre y cuando estén registrados. <br/>-PASSWORD.- Contraseña o clave para autentificar el ingreso a un lugar o sitio. <br/>-SERVIDOR.- Computadora conectada a una red que pone sus recursos a disposición del resto de los integrantes de la red. Suele utilizarse para mantener datos centralizados o para gestionar recursos compartidos.  <br/>-SERVICIOS WEB.- Un servicio web es una interfaz de software que describe un conjunto de operaciones a las cuales se puede acceder por la red a través de mensajería XML estandarizada. Usa protocolos basados en el lenguaje XML con el objetivo de describir una operación para ejecutar o datos para intercambiar con otro servicio web.<br/>- SITIO WEB.- Se canaliza a través del URL o identificador único de cada página de contenidos. Este sistema permite a los usuarios iniciar una solicitud de trámite y a los funcionarios del Agua Potable atender las solicitudes e ingresar datos de las inspecciones realizadas.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0017">
+<rem:name>
+Acrónimos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>1.4.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0036">
+<rem:name>
+Acronimos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>24</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>-DBMS.- Sistema de Administración de base de datos, El software que permite la creación, administración e implementación de la base de datos. <br/>-SCL. Sistema de consulta de libros<br/>-JSON.- (JavaScript Object Notation) es un formato para el intercambios de datos, básicamente JSON describe los datos con una sintaxis dedicada que se usa para identificar y gestionar los datos. <br/>-PHP es un lenguaje de programación de uso general de código del lado del servidor originalmente diseñado para el desarrollo web de contenido dinámico. <br/>-SRS.- Acrónimo de Software Requeriments Specifications (Especificación de <br/>Requerimientos de Software) <br/></rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0008">
+<rem:name>
+DESCRIPCION GENERAL</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>2 </rem:number>
+<rem:section
+ oid = "SEC-0009">
+<rem:name>
+Perspectiva del Producto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0004">
+<rem:name>
+Perspectiva del producto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>El sistema se va a desarrollar de manera independiente y tendra un diseño modular donde contara con 2 secciones, los cuales son: El del administrador, se encargara de gestionar los libros que se encuentre en la organizacion y  el del usuario final, es el que consultara el libro y podra apreciar en que lugar esta ubicado.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0010">
+<rem:name>
+Funcionabilidad del producto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.2 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0001">
+<rem:name>
+Funcionabilidad del Producto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\1.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+<rem:section
+ oid = "SEC-0011">
+<rem:name>
+Caracteristicas de los usuarios</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.3 </rem:number>
+<rem:stakeholder
+ oid = "STK-0003">
+<rem:name>
+Encargado de Biblioteca</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Encargado de gestionar los datos de los libros</rem:comments>
+<rem:stakeholderRole>Administrador</rem:stakeholderRole>
+<rem:isCustomer/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0004">
+<rem:name>
+Estudiantes, Docentes, Administrativos.</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Encargado de consultar los datos del libro que necesite.</rem:comments>
+<rem:stakeholderRole>Usuario Final</rem:stakeholderRole>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+</rem:section>
+<rem:section
+ oid = "SEC-0012">
+<rem:name>
+Restricciones</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.4 </rem:number>
+<rem:paragraph
+ oid = "PRG-0005">
+<rem:name>
+Restricciones</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>El sistema sera desarrolado en PHP un Lenguaje que sera usado para crear los servicios Web, el motor de base de datos es MySql de tecnologia Relacional,el DBMS que se usara es PhpMyAdmi, se usara Java para el manejo de datos y XML para la interfaz en la aplicacion Android, se usaran datos Json para que sean mas sencillo manejarlos.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0013">
+<rem:name>
+Suposiciones y dependencias</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.5 </rem:number>
+<rem:section
+ oid = "SEC-0027">
+<rem:name>
+Dependencias</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>2.5.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0006">
+<rem:name>
+Dependencias</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Para usuarios finales se debe tener un dispositivo movil con un sistema operativo Android 4.0 como minimo, tambien se debe tener una conexion de datos para que se pueda usar la aplicacion.<br/><br/>Para el administrador debe tener un navegador reciente para evitar problema de compatibilidad, tambien una conexion estable para que no se pierda los datos al gestionarse.</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0015">
+<rem:name>
+REQUISITOS ESPECÍFICOS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>3 </rem:number>
+<rem:paragraph
+ oid = "PRG-0007">
+<rem:name>
+Requisitos especificos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>R1: Permitir la autenticacion del administrador y usuarios.<br/>R2: Realizar las operaciones de gestion de libros.<br/>R3: Realizar consultas de ubicacion de los libros en la aplicacion Android.<br/>R4: Permitir la reserva de un libro que el usuario desee.<br/></rem:text>
+</rem:paragraph>
+<rem:section
+ oid = "SEC-0018">
+<rem:name>
+Requisitos Comunes de los interfaces</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.1 </rem:number>
+<rem:section
+ oid = "SEC-0019">
+<rem:name>
+Interfaces de usuario</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.1.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0008">
+<rem:name>
+Interfaces de usuario</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Las interfaces de usuario estan relacionadas a pantallas de dispositivos moviles como tambien dispositivos de mesa estos mediante Formularios y listas para que se pueda mostrar de una forma comoda al usuario final. Las interacciones con la aplicaciones se haran por medio tactil (Caso de consulta) y por medio del Teclado y el Mouse(Caso del administrador).<br/><br/>Las interfaces que se van a crear incluiran:<br/>-  Botones<br/>-  Menu<br/>-  Alertas<br/>-  Listas<br/>-  Formulario de autenticacion.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0020">
+<rem:name>
+Interfaces de hardware</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.1.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0009">
+<rem:name>
+Interfaces de Hardware</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>- La Pantalla tactil del dispositivo Movil: La aplicacion Android debera interactuar con el usuario final y mostrar la informacion de los libros.<br/><br/>- La pantalla del monitor: El software mostrar los formularios para que el Adminsitrador pueda gestionar la informacion de los libros.<br/><br/>- Raton: El software debera interactuar con las acciones del Raton para poder validar la informacion escrita.<br/><br/>- Teclado: El software debera interactuar con las pulsaciones del teclado para poder llenar los campos de los formularios para el ingreso de estos datos a los sectores que deben ir en la base de datos.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0021">
+<rem:name>
+Interface de software</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.1.3 </rem:number>
+<rem:paragraph
+ oid = "PRG-0010">
+<rem:name>
+Interfaces de Software</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Para hacer uso de la aplicacion se usara un dispositivo movil con sistema operativo Android minimo en su version 4.0.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0022">
+<rem:name>
+Interfaces de Comunicacion</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.1.4 </rem:number>
+<rem:paragraph
+ oid = "PRG-0011">
+<rem:name>
+Interface de Comunicacion</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Ninguno</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0023">
+<rem:name>
+Requisitos funcionales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.2 </rem:number>
+<rem:section
+ oid = "SEC-0028">
+<rem:name>
+Requisito Funcional 1 </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.2.1 </rem:number>
+<rem:functionalRequirement
+ oid = "FRQ-0001">
+<rem:name>
+Autenticacion de usuario</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+Permitir la autenticacion de usuario</rem:description>
+</rem:functionalRequirement>
+<rem:paragraph
+ oid = "PRG-0012">
+<rem:name>
+INTRODUCCION</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>INTRODUCCION<br/><br/>El sistema debera permitir el ingreso de un usuario y password del Usuario para poder acceder a la aplicacion u plataforma</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0013">
+<rem:name>
+ENTRADAS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>ENTRADAS<br/><br/>Usuario, Contraseña.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0014">
+<rem:name>
+PROCESO</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>PROCESO<br/><br/>El sistema pedira las credenciales del usuario para poder validarlas e ingresar al sistema.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0015">
+<rem:name>
+SALIDAS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>SALIDAS<br/><br/>Las salidas van dirigidas a : Usuarios<br/><br/>Mensaje de error en el caso de tener campos vacios.<br/>Mensage de error en el casos de ingresar las credenciales incorrectas.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0029">
+<rem:name>
+Requisito Funcional 2</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.2.2 </rem:number>
+<rem:functionalRequirement
+ oid = "FRQ-0002">
+<rem:name>
+Registrar Material Bibliografico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+agregar los  datos de los material bibliografico.</rem:description>
+</rem:functionalRequirement>
+<rem:paragraph
+ oid = "PRG-0016">
+<rem:name>
+ INTRODUCCION</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>INTRODUCCION<br/><br/>El sistema debera permitir agregar los datos del material bibliografico para que el servicio este actualizado.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0017">
+<rem:name>
+ENTRADAS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>ENTRADAS<br/><br/>Coleccion, Tipo Material, Area, Titulo, Autor, Clasificacion, ISBN, Acceso, Disponibilidad, Fecha devolucion, Material Acompañante, Ejemplares, Volumen, Tomo , Reservacion , Sala, Estado.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0018">
+<rem:name>
+PROCESO</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>PROCESO<br/><br/>El sistema pedira datos del material bibliografico  para que la base de datos este actualizada</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0019">
+<rem:name>
+SALIDAS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>SALIDAS<br/><br/>Las salidas van dirigidas a : Administrador.<br/><br/>Mensaje de Aprobacion que se agregaron los datos.<br/>Mensaje de error en el caso de tener campos vacios.<br/>Mensaje de error en el caso de que no escriba el tipo de dato correspondiente a la casilla<br/><br/></rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0031">
+<rem:name>
+Requisito Funcional 3</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.2.3 </rem:number>
+<rem:functionalRequirement
+ oid = "FRQ-0004">
+<rem:name>
+Consultar Datos de Material Bibliografico </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+permitir obtenerr la informacion del  material bibliografico  que se desee.</rem:description>
+</rem:functionalRequirement>
+<rem:paragraph
+ oid = "PRG-0024">
+<rem:name>
+INTRODUCCION</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>INTRODUCCION<br/><br/>El sistema debera permitir consultar  los datos del material bibliografico  que el usuario desee. </rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0025">
+<rem:name>
+ENTRADAS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>ENTRADAS<br/><br/>-Busqueda General: <br/>Coleccion, Tipo Material , Area, Frase , Campo.<br/>-Busqueda avanzada:<br/>Coleccion, Tipo de Material, Campo,Titulo, Autor, Clasificacion, ISBN, Acceso.<br/><br/></rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0026">
+<rem:name>
+PROCESO</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>PROCESO<br/><br/>El sistema pedira los datos que se necesiten para poder hacer una busqueda y mostrar la informacion del material bibliografico .</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0027">
+<rem:name>
+SALIDA</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>SALIDAS<br/><br/>Las salidas van dirigidas a : Usuario<br/><br/>Mensaje de aprobacion de que encontro la informacion del libro.<br/>Informacion del Libro que deseo.<br/>Mensaje de error en el caso de tener campos vacios.<br/>Mensaje de error en el caso de que no escriba el tipo de dato correspondiente a la casilla.<br/><br/></rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0032">
+<rem:name>
+Requisito Funcional 4</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.2.4 </rem:number>
+<rem:functionalRequirement
+ oid = "FRQ-0005">
+<rem:name>
+Modificar Datos Material Bibliografico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0003"/>
+<rem:description>
+permitir la modificacion del  material bibliografico que se consulte.</rem:description>
+</rem:functionalRequirement>
+<rem:paragraph
+ oid = "PRG-0028">
+<rem:name>
+INTRODUCCION</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>INTRODUCCION<br/><br/>El sistema debera permitir modificar  los datos del material bibliografico que se desee.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0029">
+<rem:name>
+ENTRADAS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>ENTRADAS<br/><br/>Clasificacion.<br/><br/></rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0030">
+<rem:name>
+PROCESO</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>PROCESO<br/><br/>El sistema pedira los datos correspondientes mediante un formulario  para poder saber a que material bibliografico hacerles su modificaciones.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0031">
+<rem:name>
+SALIDA</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>SALIDAS<br/><br/>Las salidas van dirigidas al : Administrador<br/><br/>Mensaje de aprobacion de que encontro el material bibliografico.<br/>Formulario con la informacion editable delmaterial bibliografico<br/>Mensaje de error en el caso de tener campos vacios.<br/>Mensaje de error en el caso de que no escriba el tipo de dato correspondiente a la casilla.<br/><br/></rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0044">
+<rem:name>
+Requisito Funcional 5</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.2.5 </rem:number>
+<rem:functionalRequirement
+ oid = "FRQ-0008">
+<rem:name>
+Reservar Libro</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0003"/>
+<rem:stability value = "SBV-0002"/>
+<rem:description>
+permitir reservar libros que el usuario desea.</rem:description>
+</rem:functionalRequirement>
+<rem:paragraph
+ oid = "PRG-0045">
+<rem:name>
+INTRODUCCION</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>INTRODUCCION<br/><br/>El sistema debera permitir al usuario poder reservar un libro que necesite.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0046">
+<rem:name>
+ENTRADAS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>ENTRADAS<br/><br/>Clasificacion.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0047">
+<rem:name>
+PROCESO</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>PROCESO<br/><br/>El sistema pedira la clasificacion del libro para poder ser consultado y verificar su estado, si esta disponible cambiar el estado a no disponible.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0048">
+<rem:name>
+SALIDAS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>SALIDAS<br/><br/>Las salidas van dirigidas a : Administrador.<br/><br/>Mensaje de Aprobacion que se modifico  el estado del libro.<br/>Mensaje de error en el caso de tener campos vacios.<br/>Mensaje de error en el caso de que no escriba el tipo de dato correspondiente a la casilla.<br/><br/></rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0045">
+<rem:name>
+Requisito Funcional 6</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.2.6 </rem:number>
+<rem:functionalRequirement
+ oid = "FRQ-0009">
+<rem:name>
+Consultar Datos Usuario</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0003"/>
+<rem:stability value = "SBV-0002"/>
+<rem:description>
+permitir la consulta de datos del usuario</rem:description>
+</rem:functionalRequirement>
+<rem:paragraph
+ oid = "PRG-0049">
+<rem:name>
+INTRODUCCION</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>INTRODUCCION<br/><br/>El sistema debera permitir al administrador consultar los datos del usuario.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0050">
+<rem:name>
+ENTRADAS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>ENTRADAS<br/><br/>Codigo.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0051">
+<rem:name>
+PROCESO</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>PROCESO<br/><br/>El sistema pedira el codigo del usuario, este devolvera la informacion del consultado.</rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0052">
+<rem:name>
+SALIDAS</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>SALIDAS<br/><br/>Las salidas van dirigidas a : Administrador.<br/><br/>Mensaje de Aprobacion que se agrego el usuario<br/>Mensaje de error en el caso de tener campos vacios.<br/>Mensaje de error en el caso de que no escriba el tipo de dato correspondiente a la casilla.<br/><br/></rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0024">
+<rem:name>
+Requisitos no funcionales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.3 </rem:number>
+<rem:section
+ oid = "SEC-0033">
+<rem:name>
+Requisitos de rendimiento</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.3.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0032">
+<rem:name>
+Rendimiento</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>El dispositivo movil debera contar con una conexion de datos estable para tener unos tiempos de respuesta minimos. <br/><br/>El numero de usuarios que interactuaran simultanineamente con nuestro sistema esta en un rango de 50-100 como maximo.<br/><br/>El servidor de base de datos, debera contar con un personal tecnico listo para cualquier eventualidad.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0034">
+<rem:name>
+Seguridad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.3.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0033">
+<rem:name>
+Seguridad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La seguridad del sistema es por:<br/><br/>- Uso de contraseñas que contenga : un minimo de 6 caracteres, que contenga como minimo caracter numerico, caracteres y que no tenga espacios. </rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0035">
+<rem:name>
+Fiabilidad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.3.3 </rem:number>
+<rem:paragraph
+ oid = "PRG-0034">
+<rem:name>
+Fiabilidad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Es un factor que le generara mas facilidad a los usuario que se encuentran en la organizacion y usando la tecnologia de dispositivos moviles que es de uso cotidiano en esta epoca.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0036">
+<rem:name>
+Disponibilidad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.3.4 </rem:number>
+<rem:paragraph
+ oid = "PRG-0037">
+<rem:name>
+Disponibilidad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>24</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>El sistema ha sido realizado tomando en cuenta el horario de la organizacion y el uso del establecimiento y estara disponible el 100% del tiempo del dia.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0037">
+<rem:name>
+Mantenibilidad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.3.5 </rem:number>
+<rem:paragraph
+ oid = "PRG-0038">
+<rem:name>
+Mantenimiento</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>24</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>No se necesitara en esta aplicacion.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0038">
+<rem:name>
+Portabilidad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.3.6 </rem:number>
+<rem:paragraph
+ oid = "PRG-0039">
+<rem:name>
+Portabilidad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>24</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Una de las ventajas de utilizar lenguajes basicos y de software libre estamos garantizando que sea multiplataforma y una base de datos fiable para la organizacion.</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0025">
+<rem:name>
+Otros requisitos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.4 </rem:number>
+<rem:paragraph
+ oid = "PRG-0040">
+<rem:name>
+Otros Requisitos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>24</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>COSTO<br/><br/>El costo se vera reflejado en el trabajo realizado al final en la entrega.<br/><br/></rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0046">
+<rem:name>
+Casos de Uso</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>9</rem:month>
+<rem:day>2</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>4 </rem:number>
+<rem:useCase
+ oid = "UC-0001">
+<rem:name>
+Registrar Material Bibliografico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>9</rem:month>
+<rem:day>1</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+se registra el Material Bibliografico</rem:triggeringEvent>
+<rem:precondition>
+Autenticacion del Administrador</rem:precondition>
+<rem:postcondition>
+Aprobacion de registro<br/>Base de datos Actualizada</rem:postcondition>
+<rem:frequency>
+<rem:value>
+10
+</rem:value>
+<rem:timeUnit value = "TUV-0009"/>
+</rem:frequency>
+<rem:step oid = "STP-0001">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrara la opcion de registrar Material Bibliografico</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0003">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrara un formulario con los datos necesarios del Material Bibliografico</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0005">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+llenara  los datos del formulario.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0006">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+validara los datos previamente.</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0002">
+<rem:condition>
+los datos digitados no son los correctos frente a los campos del formulario,</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrara un mensaje que dira &quot;Error en los campos digitados&quot;y se denotara los campos erroneos.</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0007">
+<rem:number>5</rem:number>
+<rem:systemAction>
+<rem:description>
+envia los datos a la base de datos.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0008">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+de base de datos retorna un valor booleano para comprobar si se registraron.</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0001">
+<rem:condition>
+hay error en la base de datos</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrar un mensaje del error.</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0002">
+<rem:name>
+Modificar Material Bibliografico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>9</rem:month>
+<rem:day>3</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+se modificaran los datos del Material Bibliografico</rem:triggeringEvent>
+<rem:precondition>
+-Autenticacion del Administrador<br/>-Informacion en la base de datos</rem:precondition>
+<rem:postcondition>
+Aprobacion de la modificacion<br/>Base de datos Actualizada</rem:postcondition>
+<rem:frequency>
+<rem:value>
+10
+</rem:value>
+<rem:timeUnit value = "TUV-0009"/>
+</rem:frequency>
+<rem:step oid = "STP-0009">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrara la opcion de modificara Material Bibliografico</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0010">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrara un formulario con un campo de busqueda  del Material Bibliografico</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0011">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+llenara  los datos del formulario.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0012">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+validara los datos previamente.</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0003">
+<rem:condition>
+los datos digitados no son los correctos frente a los campos del formulario,</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrara un mensaje que dira &quot;Error en los campos digitados&quot;y se denotara los campos erroneos.</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0027">
+<rem:number>5</rem:number>
+<rem:useCaseAction useCase = "UC-0004"/><rem:stepException oid = "STX-0009">
+<rem:condition>
+el material no se  encuentra en la base de datos.</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrara un mensaje mencionando de que no se encuentra el material</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0013">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+envia los datos a la base de datos.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0014">
+<rem:number>7</rem:number>
+<rem:systemAction>
+<rem:description>
+de base de datos retorna un valor booleano para comprobar si se modificaron.</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0004">
+<rem:condition>
+hay error en la base de datos</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrar un mensaje del error.</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0003">
+<rem:name>
+Autenticacion de Usuario</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>9</rem:month>
+<rem:day>3</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+se validara la informacion del usuario para que ingrese a la aplicacion</rem:triggeringEvent>
+<rem:precondition>
+-Estar en la Aplicacion</rem:precondition>
+<rem:postcondition>
+-Ingreso a la aplicacion</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0015">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrara un formulario para que el usuario ingrese.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0017">
+<rem:number>2</rem:number>
+<rem:actorAction actor = "ACT-0002">
+<rem:description>
+llenara  los datos del formulario</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0018">
+<rem:number>3</rem:number>
+<rem:systemAction>
+<rem:description>
+validara los datos previamente.</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0005">
+<rem:condition>
+los datos digitados no son los correctos frente a los campos del formulario,</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrara un mensaje que dira &quot;Error en los campos digitados&quot;y se denotara los campos erroneos.</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0019">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+envia los datos a la base de datos.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0020">
+<rem:number>5</rem:number>
+<rem:systemAction>
+<rem:description>
+de base de datos retorna un valor booleano para que el usuario pueda entrar a la aplicacion</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0006">
+<rem:condition>
+hay error en la base de datos</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrar un mensaje del error.</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0004">
+<rem:name>
+Consultar Material Bibliografico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>9</rem:month>
+<rem:day>3</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+se consultaran los datos del material bibliografico</rem:triggeringEvent>
+<rem:precondition>
+-Autenticacion del usuario.</rem:precondition>
+<rem:postcondition>
+-Datos del material Bibliografico</rem:postcondition>
+<rem:frequency>
+<rem:value>
+10
+</rem:value>
+<rem:timeUnit value = "TUV-0009"/>
+</rem:frequency>
+<rem:step oid = "STP-0021">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrara la opcion de modificara Material Bibliografico o el sistema lo hara para otros procesos</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0022">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrara un formulario con un campo de busqueda  del Material Bibliografico o con los datos suministrados el sistema lo buscara internamente.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0023">
+<rem:number>3</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+llenara  los datos del formulario o el sistema lo hara autonomo si se necesita para otros procesos.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0024">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+validara los datos previamente.</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0007">
+<rem:condition>
+los datos digitados no son los correctos frente a los campos del formulario,</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrara un mensaje que dira &quot;Error en los campos digitados&quot;y se denotara los campos erroneos.</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0025">
+<rem:number>5</rem:number>
+<rem:systemAction>
+<rem:description>
+envia los datos a la base de datos.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0026">
+<rem:number>6</rem:number>
+<rem:systemAction>
+<rem:description>
+de base de datos la informacion solicitada.</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0008">
+<rem:condition>
+hay error en la base de datos</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrar un mensaje del error.</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0005">
+<rem:name>
+Consulta datos de usuario</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>9</rem:month>
+<rem:day>3</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:sources stakeholders ="STK-0003 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+se consultaran los datos del usuario que pida la reserva<br/></rem:triggeringEvent>
+<rem:precondition>
+-Autenticacion del usuario.</rem:precondition>
+<rem:postcondition>
+-Datos del material Bibliografico</rem:postcondition>
+<rem:frequency>
+<rem:value>
+10
+</rem:value>
+<rem:timeUnit value = "TUV-0009"/>
+</rem:frequency>
+<rem:step oid = "STP-0028">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+pedira a la base de datos la informacion del usuario.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0033">
+<rem:number>2</rem:number>
+<rem:systemAction>
+<rem:description>
+de base de datos la informacion solicitada.</rem:description>
+</rem:systemAction>
+<rem:stepException oid = "STX-0011">
+<rem:condition>
+hay error en la base de datos</rem:condition>
+<rem:systemAction>
+<rem:description>
+mostrar un mensaje del error.</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0006">
+<rem:name>
+Reservar Material Bibliografico</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>9</rem:month>
+<rem:day>3</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0004"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+reserve material bibliografico</rem:triggeringEvent>
+<rem:precondition>
+-Validado por el sistema</rem:precondition>
+<rem:postcondition>
+-Reservar un libro</rem:postcondition>
+<rem:frequency>
+<rem:tbd/>
+</rem:frequency>
+<rem:step oid = "STP-0034">
+<rem:number>1</rem:number>
+<rem:systemAction>
+<rem:description>
+mostrara una opcion de reservar material bibliografico.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0035">
+<rem:number>2</rem:number>
+<rem:actorAction actor = "ACT-0002">
+<rem:description>
+llenara el campo de busqueda para el material bibliografico que desea.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0036">
+<rem:number>3</rem:number>
+<rem:useCaseAction useCase = "UC-0004"/><rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0037">
+<rem:number>4</rem:number>
+<rem:systemAction>
+<rem:description>
+creara una solicitud de reserva para el Administrador.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0039">
+<rem:number>5</rem:number>
+<rem:actorAction actor = "ACT-0001">
+<rem:description>
+validara la informacion de la solicitud.</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0040">
+<rem:number>6</rem:number>
+<rem:useCaseAction useCase = "UC-0005"/><rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0038">
+<rem:number>7</rem:number>
+<rem:systemAction>
+<rem:description>
+notificara al usuario de la solicitud para que se acerque al establecimiento para que adquiera la reserva.</rem:description>
+</rem:systemAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+</rem:section>
+<rem:section
+ oid = "SEC-0039">
+<rem:name>
+Anexos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>24</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>5 </rem:number>
+<rem:section
+ oid = "SEC-0040">
+<rem:name>
+Organizaciones</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>24</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>5.1 </rem:number>
+<rem:organization
+ oid = "ORG-0001">
+<rem:name>
+Universidad de la Amazonia</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>24</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0002 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:address>Universidad de la Amazonia</rem:address>
+<rem:telephone>(+57) 8-4340591 </rem:telephone>
+<rem:fax>No Posee</rem:fax>
+</rem:organization>
+<rem:organization
+ oid = "ORG-0002">
+<rem:name>
+Dorioga Group</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:address>Calle 28 # 9-106</rem:address>
+<rem:telephone>4360728</rem:telephone>
+<rem:fax>No posee</rem:fax>
+</rem:organization>
+</rem:section>
+<rem:section
+ oid = "SEC-0041">
+<rem:name>
+Cliente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>24</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>5.2 </rem:number>
+<rem:stakeholder
+ oid = "STK-0002">
+<rem:name>
+Danny Lopez</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Calificador</rem:stakeholderRole>
+<rem:isDeveloper/>
+<rem:isCustomer/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+</rem:section>
+<rem:section
+ oid = "SEC-0047">
+<rem:name>
+Actores</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>9</rem:month>
+<rem:day>3</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>5.3 </rem:number>
+<rem:actor
+ oid = "ACT-0001">
+<rem:name>
+Administrador</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>9</rem:month>
+<rem:day>3</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>la persona que sera la encargada de gestionar la aplicacion</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0002">
+<rem:name>
+Usuario Final</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>9</rem:month>
+<rem:day>3</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0001 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>la persona que hara mayor uso a la aplicacion</rem:actorRole>
+</rem:actor>
+</rem:section>
+</rem:section>
+</rem:c_requirementsSpecification>
+<rem:d_requirementsSpecification oid = "DRS-0002">
+<rem:name>Documento de Análisis del Sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:d_requirementsSpecification>
+<rem:defectsSpecification oid = "DFS-0003">
+<rem:name>Registro de Conflictos y Defectos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:defectsSpecification>
+<rem:changeRequestsSpecification oid = "CHS-0004">
+<rem:name>Registro de Peticiones de Cambio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2015</rem:year>
+<rem:month>8</rem:month>
+<rem:day>22</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:changeRequestsSpecification>
+<rem:trace source = "UC-0004"  target = "FRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0001"  target = "FRQ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0001"  target = "FRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0002"  target = "FRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0002"  target = "FRQ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0004"  target = "FRQ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0005"  target = "FRQ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0005"  target = "FRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:predefinedValueTypes>
+<rem:predefinedValueType
+ oid = "PVT-0006">
+<rem:name>
+Time</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type (non-standard)</rem:comments>
+<rem:description>
+Hour:minutes:seconds</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0005">
+<rem:name>
+Date</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type (non-standard)</rem:comments>
+<rem:description>
+Dates</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0002">
+<rem:name>
+Integer</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Integer numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0001">
+<rem:name>
+Real</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Real numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0004">
+<rem:name>
+String</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Alphanumeric strings</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0003">
+<rem:name>
+Natural</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Natural numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+</rem:predefinedValueTypes>
+<rem:predefinedValues>
+<rem:changeRequestStatusValue oid = "CRV-0001">
+<rem:name>PD</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0002">
+<rem:name>pendiente de análisis</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0003">
+<rem:name>pendiente de aprobar/rechazar</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0004">
+<rem:name>pendiente de realización</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0005">
+<rem:name>verificado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0006">
+<rem:name>rechazado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:conflictStatusValue oid = "CSV-0002">
+<rem:name>no resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0003">
+<rem:name>en proceso de negociación</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0001">
+<rem:name>PD</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0004">
+<rem:name>resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:defectStatusValue oid = "DSV-0003">
+<rem:name>en proceso de negociación</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0002">
+<rem:name>no eliminado</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0004">
+<rem:name>eliminado</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
+</rem:defectStatusValue>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
+<rem:description>
+<![CDATA[Por Determinar]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0004">
+<rem:name>Incomprensibilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0005">
+<rem:name>No verificabilidad</rem:name>
+<rem:description>
+<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0023">
+<rem:name>Otro</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0016">
+<rem:name>No rastreabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0015">
+<rem:name>Nivel incorrecto de detalle</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0017">
+<rem:name>Organización incorrecta</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0009">
+<rem:name>Dependiente del diseño</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0011">
+<rem:name>Imprecisión</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0007">
+<rem:name>No implementabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0010">
+<rem:name>Redundancia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0008">
+<rem:name>Verbosidad excesiva</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0014">
+<rem:name>Estabilidad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:importanceValue oid = "IMV-0002">
+<rem:name>vital</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0003">
+<rem:name>importante</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0001">
+<rem:name>PD</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0004">
+<rem:name>quedaría bien</rem:name>
+</rem:importanceValue>
+<rem:stabilityValue oid = "SBV-0003">
+<rem:name>media</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0004">
+<rem:name>alta</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0002">
+<rem:name>baja</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0001">
+<rem:name>PD</rem:name>
+</rem:stabilityValue>
+<rem:statusValue oid = "STV-0003">
+<rem:name>pendiente de verificación</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0002">
+<rem:name>en construcción</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0004">
+<rem:name>pendiente de validación</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0001">
+<rem:name>PD</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0005">
+<rem:name>validado</rem:name>
+</rem:statusValue>
+<rem:terminationValue oid = "TEV-0001">
+<rem:name>PD</rem:name>
+</rem:terminationValue>
+<rem:terminationValue oid = "TEV-0002">
+<rem:name>continúa</rem:name>
+</rem:terminationValue>
+<rem:terminationValue oid = "TEV-0003">
+<rem:name>queda sin efecto</rem:name>
+</rem:terminationValue>
+<rem:timeUnitValue oid = "TUV-0002">
+<rem:name>año(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0001">
+<rem:name>PD</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0008">
+<rem:name>día(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0009">
+<rem:name>hora(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0010">
+<rem:name>minuto(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0007">
+<rem:name>semana(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0011">
+<rem:name>segundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0012">
+<rem:name>décima(s) de segundo</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0014">
+<rem:name>milisegundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0013">
+<rem:name>centésima(s) de segundo</rem:name>
+</rem:timeUnitValue>
+<rem:urgencyValue oid = "URV-0001">
+<rem:name>PD</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0002">
+<rem:name>inmediatamente</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0004">
+<rem:name>puede esperar</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0003">
+<rem:name>hay presión</rem:name>
+</rem:urgencyValue>
+</rem:predefinedValues>
+</rem:requirementsProject>

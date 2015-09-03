@@ -1,0 +1,2570 @@
+<html xmlns:rem="http://rem.lsi.us.es">
+<head>
+<title>Proyecto Documento de Requisitos</title>
+<style type="text/css">
+<!--
+            body {
+                font-family: arial,verdana;
+                font-size: 10pt;
+                text-align: justify
+            }
+
+            h1 { font-size: 14pt }
+            h2 { font-size: 13pt }
+            h3 { font-size: 12pt }
+            h4 { font-size: 11pt }
+            h5 { font-size: 10pt }
+            h6 { font-size: 10pt }
+
+            h1.cover { font-size: 20pt }
+
+            tr { font-size: 10pt }
+
+            table { border: black solid; }
+            table.TOC { border: none; }
+            ul {
+                margin-top:    0pt;
+                margin-bottom: 0pt;
+                margin-left:   12pt
+            }
+        -->
+</style>
+</head>
+<body>
+<center>
+<h3>Proyecto Documento de Requisitos</h3>
+<p />
+<h1 class="cover">Documento de Requisitos de un Sistema de Consulta de Libros (SCL)</h1>
+<p />
+<h3>Versión 1.0</h3>
+<h3>Fecha 22/08/2015</h3>
+<p />
+<h3>Preparado para:</h3>
+<a href="#ORG-0001" title="Universidad de la Amazonia">
+<p>
+Universidad de la Amazonia</p>
+</a>
+<p />
+<h3>Preparado por:</h3>
+<a href="#ORG-0002" title="Dorioga Group">
+<p>
+Dorioga Group</p>
+</a>
+<p />
+</center>
+<hr size="4" />
+<p />
+<h1 align="left">Índice</h1>
+<p />
+<table border="0" width="100%" class="TOC">
+<tr>
+<th align="left" valign="top">1 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0001">
+INTRODUCCIÓN</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0002">
+Proposito</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0003">
+Alcance</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0004">
+Personal Involucrado</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.4 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0005">
+Definiciones y acronimos </a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.4.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0016">
+Definiciones</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.4.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0017">
+Acrónimos</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">2 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0008">
+DESCRIPCION GENERAL</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0009">
+Perspectiva del Producto</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0010">
+Funcionabilidad del producto</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0011">
+Caracteristicas de los usuarios</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.4 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0012">
+Restricciones</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.5 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0013">
+Suposiciones y dependencias</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">2.5.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0027">
+Dependencias</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">3 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0015">
+REQUISITOS ESPECÍFICOS</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0018">
+Requisitos Comunes de los interfaces</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.1.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0019">
+Interfaces de usuario</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.1.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0020">
+Interfaces de hardware</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.1.3 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0021">
+Interface de software</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.1.4 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0022">
+Interfaces de Comunicacion</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0023">
+Requisitos funcionales</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0028">
+Requisito Funcional 1 </a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0029">
+Requisito Funcional 2</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.3 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0031">
+Requisito Funcional 3</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.4 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0032">
+Requisito Funcional 4</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.5 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0044">
+Requisito Funcional 5</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.6 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0045">
+Requisito Funcional 6</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0024">
+Requisitos no funcionales</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0033">
+Requisitos de rendimiento</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0034">
+Seguridad</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.3 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0035">
+Fiabilidad</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.4 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0036">
+Disponibilidad</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.5 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0037">
+Mantenibilidad</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.6 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0038">
+Portabilidad</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.4 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0025">
+Otros requisitos</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">4 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0046">
+Casos de Uso</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">5 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0039">
+Anexos</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0040">
+Organizaciones</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0041">
+Cliente</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0047">
+Actores</a>
+</td>
+</tr>
+</table>
+<p />
+<hr size="4" />
+<p />
+<a name="SEC-0001" />
+<h1 align="left">1 
+INTRODUCCIÓN</h1><a name="PRG-0001" />
+<p>El presente documento de requisitos de software (SRS) del sistema surge de un estudio y analisis previo hacia el organismo a  el cual se piensa hacer el producto, se espera que el proceso de elaboracion se hara para que el cliente se sienta satisfecho.</p>
+<a name="SEC-0002" />
+<h2 align="left">1.1 
+Proposito</h2><a name="PRG-0002" />
+<p>- Documentar y estructurar las peticiones acordadas del cliente.
+<br />- Mostrar de una manera facil y entendible a los usuarios finales que es lo que el cliente desea.</p>
+<a name="SEC-0003" />
+<h2 align="left">1.2 
+Alcance</h2><a name="PRG-0003" />
+<p>- Identificacion del producto de software "SCL"
+<br />- Objeitvos del sistema: 
+<br />  -  Permitir la gestion la consulta de libros.
+<br />  -  Mostrar el Lugar donde se encuentran los libros.
+<br />  -  Mostrar la informacion importante de los libros.</p>
+<a name="SEC-0004" />
+<h2 align="left">1.3 
+Personal Involucrado</h2><a name="STK-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Diego Hernan Aguilar Gomez</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Dorioga Group</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Gestor de Proyecto, Programador, Diseñador de base de datos, Analista</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0005" />
+<h2 align="left">1.4 
+Definiciones y acronimos </h2><a name="SEC-0016" />
+<h3 align="left">1.4.1 
+Definiciones</h3><a name="PRG-0035" />
+<p>-ACTUALIZACION.- Insertar, eliminar,  modificar los registros  de los usuarios (Profesores). 
+<br />-ALMACENAMIENTO- En relación con ordenadores o computadoras, cualquier dispositivo capaz de almacenar información procedente de un sistema informático.  
+<br />-ANDROID.- Es un sistema operativo basado en el núcleo Linux. Fue diseñado principalmente para dispositivos móviles con pantalla táctil, como teléfonos inteligentes o tablets; y también para relojes inteligentes, televisores y automóviles.
+<br />-BASE DE DATOS.- Cualquier conjunto de datos organizados para su almacenamiento en la memoria de un ordenador o computadora, diseñado para facilitar su mantenimiento y 
+<br />acceso de una forma estándar. La información se organiza en campos y registros. Uncampo se refiere a un tipo o atributo de información, y un registro, a toda la información sobre un individuo.  
+<br />-CONEXION.- Comunicación entre dos entes que tienen características similares de comunicación. 
+<br />Interfaz.- Medio que permite la comunicación entre el usuario y el sistema. 
+<br />-DISPOSITIVOS MOVILES.- Se puede definir como un aparato de pequeño tamaño, con  algunas capacidades de procesamiento, con conexión permanente o intermitente a una red, con memoria limitada, que ha sido diseñado específicamente para una función, pero que puede llevar a cabo otras funciones más generales.
+<br />-HOST/HOSTING- Es un ordenador que funciona como el punto de inicio y final de las transferencias de datos. Más comúnmente descrito como el lugar donde reside un sitio web. Un host de Internet tiene una dirección de Internet única (dirección IP) y un nombre de dominio único o nombre de host.
+<br />-INTERNET- interconexión de redes informáticas que permite a los ordenadores o computadoras conectadas comunicarse directamente, es decir, cada ordenador de la red puede conectarse a cualquier otro ordenador de la red.  El término suele referirse a una interconexión en particular, de carácter planetario y abierto al público, que conecta 
+<br />redes informáticas de organismos oficiales, educativos y empresariales. 
+<br />-LOGIN.- Nombre o alias que se le da a una persona para permitirle el acceso al sistema siempre y cuando estén registrados. 
+<br />-PASSWORD.- Contraseña o clave para autentificar el ingreso a un lugar o sitio. 
+<br />-SERVIDOR.- Computadora conectada a una red que pone sus recursos a disposición del resto de los integrantes de la red. Suele utilizarse para mantener datos centralizados o para gestionar recursos compartidos.  
+<br />-SERVICIOS WEB.- Un servicio web es una interfaz de software que describe un conjunto de operaciones a las cuales se puede acceder por la red a través de mensajería XML estandarizada. Usa protocolos basados en el lenguaje XML con el objetivo de describir una operación para ejecutar o datos para intercambiar con otro servicio web.
+<br />- SITIO WEB.- Se canaliza a través del URL o identificador único de cada página de contenidos. Este sistema permite a los usuarios iniciar una solicitud de trámite y a los funcionarios del Agua Potable atender las solicitudes e ingresar datos de las inspecciones realizadas.</p>
+<a name="SEC-0017" />
+<h3 align="left">1.4.2 
+Acrónimos</h3><a name="PRG-0036" />
+<p>-DBMS.- Sistema de Administración de base de datos, El software que permite la creación, administración e implementación de la base de datos. 
+<br />-SCL. Sistema de consulta de libros
+<br />-JSON.- (JavaScript Object Notation) es un formato para el intercambios de datos, básicamente JSON describe los datos con una sintaxis dedicada que se usa para identificar y gestionar los datos. 
+<br />-PHP es un lenguaje de programación de uso general de código del lado del servidor originalmente diseñado para el desarrollo web de contenido dinámico. 
+<br />-SRS.- Acrónimo de Software Requeriments Specifications (Especificación de 
+<br />Requerimientos de Software) 
+<br />
+</p>
+<a name="SEC-0008" />
+<h1 align="left">2 
+DESCRIPCION GENERAL</h1><a name="SEC-0009" />
+<h2 align="left">2.1 
+Perspectiva del Producto</h2><a name="PRG-0004" />
+<p>El sistema se va a desarrollar de manera independiente y tendra un diseño modular donde contara con 2 secciones, los cuales son: El del administrador, se encargara de gestionar los libros que se encuentre en la organizacion y  el del usuario final, es el que consultara el libro y podra apreciar en que lugar esta ubicado.</p>
+<a name="SEC-0010" />
+<h2 align="left">2.2 
+Funcionabilidad del producto</h2><a name="GRF-0001" />
+<p align="center">
+<img src=".\1.jpg" title=".\1.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Funcionabilidad del Producto</p>
+<a name="SEC-0011" />
+<h2 align="left">2.3 
+Caracteristicas de los usuarios</h2><a name="STK-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Encargado de Biblioteca</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Universidad de la Amazonia</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Administrador</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Encargado de gestionar los datos de los libros</td>
+</tr>
+</table>
+<p />
+<a name="STK-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Estudiantes, Docentes, Administrativos.</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Universidad de la Amazonia</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Usuario Final</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Encargado de consultar los datos del libro que necesite.</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0012" />
+<h2 align="left">2.4 
+Restricciones</h2><a name="PRG-0005" />
+<p>El sistema sera desarrolado en PHP un Lenguaje que sera usado para crear los servicios Web, el motor de base de datos es MySql de tecnologia Relacional,el DBMS que se usara es PhpMyAdmi, se usara Java para el manejo de datos y XML para la interfaz en la aplicacion Android, se usaran datos Json para que sean mas sencillo manejarlos.</p>
+<a name="SEC-0013" />
+<h2 align="left">2.5 
+Suposiciones y dependencias</h2><a name="SEC-0027" />
+<h3 align="left">2.5.1 
+Dependencias</h3><a name="PRG-0006" />
+<p>Para usuarios finales se debe tener un dispositivo movil con un sistema operativo Android 4.0 como minimo, tambien se debe tener una conexion de datos para que se pueda usar la aplicacion.
+<br />
+<br />Para el administrador debe tener un navegador reciente para evitar problema de compatibilidad, tambien una conexion estable para que no se pierda los datos al gestionarse.</p>
+<a name="SEC-0015" />
+<h1 align="left">3 
+REQUISITOS ESPECÍFICOS</h1><a name="PRG-0007" />
+<p>R1: Permitir la autenticacion del administrador y usuarios.
+<br />R2: Realizar las operaciones de gestion de libros.
+<br />R3: Realizar consultas de ubicacion de los libros en la aplicacion Android.
+<br />R4: Permitir la reserva de un libro que el usuario desee.
+<br />
+</p>
+<a name="SEC-0018" />
+<h2 align="left">3.1 
+Requisitos Comunes de los interfaces</h2><a name="SEC-0019" />
+<h3 align="left">3.1.1 
+Interfaces de usuario</h3><a name="PRG-0008" />
+<p>Las interfaces de usuario estan relacionadas a pantallas de dispositivos moviles como tambien dispositivos de mesa estos mediante Formularios y listas para que se pueda mostrar de una forma comoda al usuario final. Las interacciones con la aplicaciones se haran por medio tactil (Caso de consulta) y por medio del Teclado y el Mouse(Caso del administrador).
+<br />
+<br />Las interfaces que se van a crear incluiran:
+<br />-  Botones
+<br />-  Menu
+<br />-  Alertas
+<br />-  Listas
+<br />-  Formulario de autenticacion.</p>
+<a name="SEC-0020" />
+<h3 align="left">3.1.2 
+Interfaces de hardware</h3><a name="PRG-0009" />
+<p>- La Pantalla tactil del dispositivo Movil: La aplicacion Android debera interactuar con el usuario final y mostrar la informacion de los libros.
+<br />
+<br />- La pantalla del monitor: El software mostrar los formularios para que el Adminsitrador pueda gestionar la informacion de los libros.
+<br />
+<br />- Raton: El software debera interactuar con las acciones del Raton para poder validar la informacion escrita.
+<br />
+<br />- Teclado: El software debera interactuar con las pulsaciones del teclado para poder llenar los campos de los formularios para el ingreso de estos datos a los sectores que deben ir en la base de datos.</p>
+<a name="SEC-0021" />
+<h3 align="left">3.1.3 
+Interface de software</h3><a name="PRG-0010" />
+<p>Para hacer uso de la aplicacion se usara un dispositivo movil con sistema operativo Android minimo en su version 4.0.</p>
+<a name="SEC-0022" />
+<h3 align="left">3.1.4 
+Interfaces de Comunicacion</h3><a name="PRG-0011" />
+<p>Ninguno</p>
+<a name="SEC-0023" />
+<h2 align="left">3.2 
+Requisitos funcionales</h2><a name="SEC-0028" />
+<h3 align="left">3.2.1 
+Requisito Funcional 1 </h3><a name="FRQ-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0001</th>
+<th align="left" valign="top" width="100%">
+Autenticacion de usuario</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/08/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Permitir la autenticacion de usuario</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">inmediatamente</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="PRG-0012" />
+<p>INTRODUCCION
+<br />
+<br />El sistema debera permitir el ingreso de un usuario y password del Usuario para poder acceder a la aplicacion u plataforma</p>
+<a name="PRG-0013" />
+<p>ENTRADAS
+<br />
+<br />Usuario, Contraseña.</p>
+<a name="PRG-0014" />
+<p>PROCESO
+<br />
+<br />El sistema pedira las credenciales del usuario para poder validarlas e ingresar al sistema.</p>
+<a name="PRG-0015" />
+<p>SALIDAS
+<br />
+<br />Las salidas van dirigidas a : Usuarios
+<br />
+<br />Mensaje de error en el caso de tener campos vacios.
+<br />Mensage de error en el casos de ingresar las credenciales incorrectas.</p>
+<a name="SEC-0029" />
+<h3 align="left">3.2.2 
+Requisito Funcional 2</h3><a name="FRQ-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0002</th>
+<th align="left" valign="top" width="100%">
+Registrar Material Bibliografico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/08/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+agregar los  datos de los material bibliografico.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="PRG-0016" />
+<p>INTRODUCCION
+<br />
+<br />El sistema debera permitir agregar los datos del material bibliografico para que el servicio este actualizado.</p>
+<a name="PRG-0017" />
+<p>ENTRADAS
+<br />
+<br />Coleccion, Tipo Material, Area, Titulo, Autor, Clasificacion, ISBN, Acceso, Disponibilidad, Fecha devolucion, Material Acompañante, Ejemplares, Volumen, Tomo , Reservacion , Sala, Estado.</p>
+<a name="PRG-0018" />
+<p>PROCESO
+<br />
+<br />El sistema pedira datos del material bibliografico  para que la base de datos este actualizada</p>
+<a name="PRG-0019" />
+<p>SALIDAS
+<br />
+<br />Las salidas van dirigidas a : Administrador.
+<br />
+<br />Mensaje de Aprobacion que se agregaron los datos.
+<br />Mensaje de error en el caso de tener campos vacios.
+<br />Mensaje de error en el caso de que no escriba el tipo de dato correspondiente a la casilla
+<br />
+<br />
+</p>
+<a name="SEC-0031" />
+<h3 align="left">3.2.3 
+Requisito Funcional 3</h3><a name="FRQ-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0004</th>
+<th align="left" valign="top" width="100%">
+Consultar Datos de Material Bibliografico </th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/08/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+permitir obtenerr la informacion del  material bibliografico  que se desee.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="PRG-0024" />
+<p>INTRODUCCION
+<br />
+<br />El sistema debera permitir consultar  los datos del material bibliografico  que el usuario desee. </p>
+<a name="PRG-0025" />
+<p>ENTRADAS
+<br />
+<br />-Busqueda General: 
+<br />Coleccion, Tipo Material , Area, Frase , Campo.
+<br />-Busqueda avanzada:
+<br />Coleccion, Tipo de Material, Campo,Titulo, Autor, Clasificacion, ISBN, Acceso.
+<br />
+<br />
+</p>
+<a name="PRG-0026" />
+<p>PROCESO
+<br />
+<br />El sistema pedira los datos que se necesiten para poder hacer una busqueda y mostrar la informacion del material bibliografico .</p>
+<a name="PRG-0027" />
+<p>SALIDAS
+<br />
+<br />Las salidas van dirigidas a : Usuario
+<br />
+<br />Mensaje de aprobacion de que encontro la informacion del libro.
+<br />Informacion del Libro que deseo.
+<br />Mensaje de error en el caso de tener campos vacios.
+<br />Mensaje de error en el caso de que no escriba el tipo de dato correspondiente a la casilla.
+<br />
+<br />
+</p>
+<a name="SEC-0032" />
+<h3 align="left">3.2.4 
+Requisito Funcional 4</h3><a name="FRQ-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0005</th>
+<th align="left" valign="top" width="100%">
+Modificar Datos Material Bibliografico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 23/08/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+permitir la modificacion del  material bibliografico que se consulte.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="PRG-0028" />
+<p>INTRODUCCION
+<br />
+<br />El sistema debera permitir modificar  los datos del material bibliografico que se desee.</p>
+<a name="PRG-0029" />
+<p>ENTRADAS
+<br />
+<br />Clasificacion.
+<br />
+<br />
+</p>
+<a name="PRG-0030" />
+<p>PROCESO
+<br />
+<br />El sistema pedira los datos correspondientes mediante un formulario  para poder saber a que material bibliografico hacerles su modificaciones.</p>
+<a name="PRG-0031" />
+<p>SALIDAS
+<br />
+<br />Las salidas van dirigidas al : Administrador
+<br />
+<br />Mensaje de aprobacion de que encontro el material bibliografico.
+<br />Formulario con la informacion editable delmaterial bibliografico
+<br />Mensaje de error en el caso de tener campos vacios.
+<br />Mensaje de error en el caso de que no escriba el tipo de dato correspondiente a la casilla.
+<br />
+<br />
+</p>
+<a name="SEC-0044" />
+<h3 align="left">3.2.5 
+Requisito Funcional 5</h3><a name="FRQ-0008" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0008</th>
+<th align="left" valign="top" width="100%">
+Reservar Libro</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 30/08/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+permitir reservar libros que el usuario desea.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">puede esperar</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">pendiente de verificación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">baja</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="PRG-0045" />
+<p>INTRODUCCION
+<br />
+<br />El sistema debera permitir al usuario poder reservar un libro que necesite.</p>
+<a name="PRG-0046" />
+<p>ENTRADAS
+<br />
+<br />Clasificacion.</p>
+<a name="PRG-0047" />
+<p>PROCESO
+<br />
+<br />El sistema pedira la clasificacion del libro para poder ser consultado y verificar su estado, si esta disponible cambiar el estado a no disponible.</p>
+<a name="PRG-0048" />
+<p>SALIDAS
+<br />
+<br />Las salidas van dirigidas a : Administrador.
+<br />
+<br />Mensaje de Aprobacion que se modifico  el estado del libro.
+<br />Mensaje de error en el caso de tener campos vacios.
+<br />Mensaje de error en el caso de que no escriba el tipo de dato correspondiente a la casilla.
+<br />
+<br />
+</p>
+<a name="SEC-0045" />
+<h3 align="left">3.2.6 
+Requisito Funcional 6</h3><a name="FRQ-0009" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">FRQ-0009</th>
+<th align="left" valign="top" width="100%">
+Consultar Datos Usuario</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 30/08/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+permitir la consulta de datos del usuario</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">puede esperar</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">pendiente de verificación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">baja</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="PRG-0049" />
+<p>INTRODUCCION
+<br />
+<br />El sistema debera permitir al administrador consultar los datos del usuario.</p>
+<a name="PRG-0050" />
+<p>ENTRADAS
+<br />
+<br />Codigo.</p>
+<a name="PRG-0051" />
+<p>PROCESO
+<br />
+<br />El sistema pedira el codigo del usuario, este devolvera la informacion del consultado.</p>
+<a name="PRG-0052" />
+<p>SALIDAS
+<br />
+<br />Las salidas van dirigidas a : Administrador.
+<br />
+<br />Mensaje de Aprobacion que se agrego el usuario
+<br />Mensaje de error en el caso de tener campos vacios.
+<br />Mensaje de error en el caso de que no escriba el tipo de dato correspondiente a la casilla.
+<br />
+<br />
+</p>
+<a name="SEC-0024" />
+<h2 align="left">3.3 
+Requisitos no funcionales</h2><a name="SEC-0033" />
+<h3 align="left">3.3.1 
+Requisitos de rendimiento</h3><a name="PRG-0032" />
+<p>El dispositivo movil debera contar con una conexion de datos estable para tener unos tiempos de respuesta minimos. 
+<br />
+<br />El numero de usuarios que interactuaran simultanineamente con nuestro sistema esta en un rango de 50-100 como maximo.
+<br />
+<br />El servidor de base de datos, debera contar con un personal tecnico listo para cualquier eventualidad.</p>
+<a name="SEC-0034" />
+<h3 align="left">3.3.2 
+Seguridad</h3><a name="PRG-0033" />
+<p>La seguridad del sistema es por:
+<br />
+<br />- Uso de contraseñas que contenga : un minimo de 6 caracteres, que contenga como minimo caracter numerico, caracteres y que no tenga espacios. </p>
+<a name="SEC-0035" />
+<h3 align="left">3.3.3 
+Fiabilidad</h3><a name="PRG-0034" />
+<p>Es un factor que le generara mas facilidad a los usuario que se encuentran en la organizacion y usando la tecnologia de dispositivos moviles que es de uso cotidiano en esta epoca.</p>
+<a name="SEC-0036" />
+<h3 align="left">3.3.4 
+Disponibilidad</h3><a name="PRG-0037" />
+<p>El sistema ha sido realizado tomando en cuenta el horario de la organizacion y el uso del establecimiento y estara disponible el 100% del tiempo del dia.</p>
+<a name="SEC-0037" />
+<h3 align="left">3.3.5 
+Mantenibilidad</h3><a name="PRG-0038" />
+<p>No se necesitara en esta aplicacion.</p>
+<a name="SEC-0038" />
+<h3 align="left">3.3.6 
+Portabilidad</h3><a name="PRG-0039" />
+<p>Una de las ventajas de utilizar lenguajes basicos y de software libre estamos garantizando que sea multiplataforma y una base de datos fiable para la organizacion.</p>
+<a name="SEC-0025" />
+<h2 align="left">3.4 
+Otros requisitos</h2><a name="PRG-0040" />
+<p>COSTO
+<br />
+<br />El costo se vera reflejado en el trabajo realizado al final en la entrega.
+<br />
+<br />
+</p>
+<a name="SEC-0046" />
+<h1 align="left">4 
+Casos de Uso</h1><a name="UC-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0001</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Registrar Material Bibliografico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 01/09/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Encargado de Biblioteca</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">
+<li>
+<a href="#FRQ-0004" title="Consultar Datos de Material Bibliografico">
+                                [FRQ-0004] 
+Consultar Datos de Material Bibliografico </a>
+</li>
+<li>
+<a href="#FRQ-0001" title="Autenticacion de usuario">
+                                [FRQ-0001] 
+Autenticacion de usuario</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+se registra el Material Bibliografico</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+Autenticacion del Administrador</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0001" />
+<td align="center" valign="top">1</td>
+<td>El
+     
+    sistema<em>
+mostrara la opcion de registrar Material Bibliografico</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0003" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+mostrara un formulario con los datos necesarios del Material Bibliografico</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0005" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que sera la encargada de gestionar la aplicacion">
+Administrador (ACT-0001)
+    </a>
+<em>
+llenara  los datos del formulario.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0006" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+validara los datos previamente.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0007" />
+<td align="center" valign="top">5</td>
+<td>El
+     
+    sistema<em>
+envia los datos a la base de datos.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0008" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+de base de datos retorna un valor booleano para comprobar si se registraron.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+Aprobacion de registro
+<br />Base de datos Actualizada</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="3">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0002" />
+<td align="center" valign="top">4</td>
+<td>Si<em>
+los datos digitados no son los correctos frente a los campos del formulario,,
+                            </em>el
+     
+    sistema<em>
+mostrara un mensaje que dira "Error en los campos digitados"y se denotara los campos erroneos.</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0001" />
+<td align="center" valign="top">6</td>
+<td>Si<em>
+hay error en la base de datos,
+                            </em>el
+     
+    sistema<em>
+mostrar un mensaje del error.</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+10
+veces por
+                         
+                        hora(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0002</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Modificar Material Bibliografico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 03/09/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Encargado de Biblioteca</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">
+<li>
+<a href="#FRQ-0001" title="Autenticacion de usuario">
+                                [FRQ-0001] 
+Autenticacion de usuario</a>
+</li>
+<li>
+<a href="#FRQ-0004" title="Consultar Datos de Material Bibliografico">
+                                [FRQ-0004] 
+Consultar Datos de Material Bibliografico </a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+se modificaran los datos del Material Bibliografico</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+-Autenticacion del Administrador
+<br />-Informacion en la base de datos</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="8">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0009" />
+<td align="center" valign="top">1</td>
+<td>El
+     
+    sistema<em>
+mostrara la opcion de modificara Material Bibliografico</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0010" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+mostrara un formulario con un campo de busqueda  del Material Bibliografico</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0011" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que sera la encargada de gestionar la aplicacion">
+Administrador (ACT-0001)
+    </a>
+<em>
+llenara  los datos del formulario.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0012" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+validara los datos previamente.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0027" />
+<td align="center" valign="top">5</td>
+<td>
+    Se realiza el caso de uso
+<a href="&#xA;            #UC-0004">
+Consultar Material Bibliografico
+        (UC-0004)
+    </a></td>
+</tr>
+<tr>
+<a name="STP-0013" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+envia los datos a la base de datos.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0014" />
+<td align="center" valign="top">7</td>
+<td>El
+     
+    sistema<em>
+de base de datos retorna un valor booleano para comprobar si se modificaron.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+Aprobacion de la modificacion
+<br />Base de datos Actualizada</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="4">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0003" />
+<td align="center" valign="top">4</td>
+<td>Si<em>
+los datos digitados no son los correctos frente a los campos del formulario,,
+                            </em>el
+     
+    sistema<em>
+mostrara un mensaje que dira "Error en los campos digitados"y se denotara los campos erroneos.</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0009" />
+<td align="center" valign="top">5</td>
+<td>Si<em>
+el material no se  encuentra en la base de datos.,
+                            </em>el
+     
+    sistema<em>
+mostrara un mensaje mencionando de que no se encuentra el material</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0004" />
+<td align="center" valign="top">7</td>
+<td>Si<em>
+hay error en la base de datos,
+                            </em>el
+     
+    sistema<em>
+mostrar un mensaje del error.</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+10
+veces por
+                         
+                        hora(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0003</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Autenticacion de Usuario</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 03/09/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+se validara la informacion del usuario para que ingrese a la aplicacion</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+-Estar en la Aplicacion</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="6">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0015" />
+<td align="center" valign="top">1</td>
+<td>El
+     
+    sistema<em>
+mostrara un formulario para que el usuario ingrese.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0017" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa la persona que hara mayor uso a la aplicacion">
+Usuario Final (ACT-0002)
+    </a>
+<em>
+llenara  los datos del formulario</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0018" />
+<td align="center" valign="top">3</td>
+<td>El
+     
+    sistema<em>
+validara los datos previamente.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0019" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+envia los datos a la base de datos.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0020" />
+<td align="center" valign="top">5</td>
+<td>El
+     
+    sistema<em>
+de base de datos retorna un valor booleano para que el usuario pueda entrar a la aplicacion</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+-Ingreso a la aplicacion</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="3">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0005" />
+<td align="center" valign="top">3</td>
+<td>Si<em>
+los datos digitados no son los correctos frente a los campos del formulario,,
+                            </em>el
+     
+    sistema<em>
+mostrara un mensaje que dira "Error en los campos digitados"y se denotara los campos erroneos.</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0006" />
+<td align="center" valign="top">5</td>
+<td>Si<em>
+hay error en la base de datos,
+                            </em>el
+     
+    sistema<em>
+mostrar un mensaje del error.</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0004</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Consultar Material Bibliografico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 03/09/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Encargado de Biblioteca</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">
+<li>
+<a href="#FRQ-0001" title="Autenticacion de usuario">
+                                [FRQ-0001] 
+Autenticacion de usuario</a>
+</li>
+<li>
+<a href="#FRQ-0004" title="Consultar Datos de Material Bibliografico">
+                                [FRQ-0004] 
+Consultar Datos de Material Bibliografico </a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+se consultaran los datos del material bibliografico</em>
+    o durante la realización de los siguientes casos de uso:
+<a href="&#xA;                #UC-0002">
+           [UC-0002]
+           
+Modificar Material Bibliografico</a>, <a href="&#xA;                #UC-0006">
+           [UC-0006]
+           
+Reservar Material Bibliografico</a></td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+-Autenticacion del usuario.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="7">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0021" />
+<td align="center" valign="top">1</td>
+<td>El
+     
+    sistema<em>
+mostrara la opcion de modificara Material Bibliografico o el sistema lo hara para otros procesos</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0022" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+mostrara un formulario con un campo de busqueda  del Material Bibliografico o con los datos suministrados el sistema lo buscara internamente.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0023" />
+<td align="center" valign="top">3</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que sera la encargada de gestionar la aplicacion">
+Administrador (ACT-0001)
+    </a>
+<em>
+llenara  los datos del formulario o el sistema lo hara autonomo si se necesita para otros procesos.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0024" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+validara los datos previamente.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0025" />
+<td align="center" valign="top">5</td>
+<td>El
+     
+    sistema<em>
+envia los datos a la base de datos.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0026" />
+<td align="center" valign="top">6</td>
+<td>El
+     
+    sistema<em>
+de base de datos la informacion solicitada.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+-Datos del material Bibliografico</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="3">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0007" />
+<td align="center" valign="top">4</td>
+<td>Si<em>
+los datos digitados no son los correctos frente a los campos del formulario,,
+                            </em>el
+     
+    sistema<em>
+mostrara un mensaje que dira "Error en los campos digitados"y se denotara los campos erroneos.</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0008" />
+<td align="center" valign="top">6</td>
+<td>Si<em>
+hay error en la base de datos,
+                            </em>el
+     
+    sistema<em>
+mostrar un mensaje del error.</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+10
+veces por
+                         
+                        hora(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0005</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Consulta datos de usuario</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 03/09/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0003">
+Encargado de Biblioteca</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">
+<li>
+<a href="#FRQ-0004" title="Consultar Datos de Material Bibliografico">
+                                [FRQ-0004] 
+Consultar Datos de Material Bibliografico </a>
+</li>
+<li>
+<a href="#FRQ-0001" title="Autenticacion de usuario">
+                                [FRQ-0001] 
+Autenticacion de usuario</a>
+</li>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+se consultaran los datos del usuario que pida la reserva
+<br />
+</em>
+    o durante la realización de los siguientes casos de uso:
+<a href="&#xA;                #UC-0006">
+           [UC-0006]
+           
+Reservar Material Bibliografico</a></td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+-Autenticacion del usuario.</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="3">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0028" />
+<td align="center" valign="top">1</td>
+<td>El
+     
+    sistema<em>
+pedira a la base de datos la informacion del usuario.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0033" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+de base de datos la informacion solicitada.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+-Datos del material Bibliografico</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0011" />
+<td align="center" valign="top">2</td>
+<td>Si<em>
+hay error en la base de datos,
+                            </em>el
+     
+    sistema<em>
+mostrar un mensaje del error.</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+10
+veces por
+                         
+                        hora(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0006</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Reservar Material Bibliografico</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 03/09/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+reserve material bibliografico</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+-Validado por el sistema</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="8">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0034" />
+<td align="center" valign="top">1</td>
+<td>El
+     
+    sistema<em>
+mostrara una opcion de reservar material bibliografico.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0035" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa la persona que hara mayor uso a la aplicacion">
+Usuario Final (ACT-0002)
+    </a>
+<em>
+llenara el campo de busqueda para el material bibliografico que desea.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0036" />
+<td align="center" valign="top">3</td>
+<td>
+    Se realiza el caso de uso
+<a href="&#xA;            #UC-0004">
+Consultar Material Bibliografico
+        (UC-0004)
+    </a></td>
+</tr>
+<tr>
+<a name="STP-0037" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+creara una solicitud de reserva para el Administrador.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0039" />
+<td align="center" valign="top">5</td>
+<td>El actor<a href="#ACT-0001" title="Este actor representa la persona que sera la encargada de gestionar la aplicacion">
+Administrador (ACT-0001)
+    </a>
+<em>
+validara la informacion de la solicitud.</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0040" />
+<td align="center" valign="top">6</td>
+<td>
+    Se realiza el caso de uso
+<a href="&#xA;            #UC-0005">
+Consulta datos de usuario
+        (UC-0005)
+    </a></td>
+</tr>
+<tr>
+<a name="STP-0038" />
+<td align="center" valign="top">7</td>
+<td>El
+     
+    sistema<em>
+notificara al usuario de la solicitud para que se acerque al establecimiento para que adquiera la reserva.</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+-Reservar un libro</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de validación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0039" />
+<h1 align="left">5 
+Anexos</h1><a name="SEC-0040" />
+<h2 align="left">5.1 
+Organizaciones</h2><a name="ORG-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+Universidad de la Amazonia</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">Universidad de la Amazonia</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">(+57) 8-4340591 </td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">No Posee</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ORG-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+Dorioga Group</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">Calle 28 # 9-106</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">4360728</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">No posee</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0041" />
+<h2 align="left">5.2 
+Cliente</h2><a name="STK-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Danny Lopez</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Universidad de la Amazonia</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Calificador</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0047" />
+<h2 align="left">5.3 
+Actores</h2><a name="ACT-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0001</th>
+<th align="left" valign="top" width="100%">
+Administrador</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 03/09/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>la persona que sera la encargada de gestionar la aplicacion</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0002</th>
+<th align="left" valign="top" width="100%">
+Usuario Final</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 03/09/2015 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0001">
+Diego Hernan Aguilar Gomez</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>la persona que hara mayor uso a la aplicacion</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+</body>
+</html>
